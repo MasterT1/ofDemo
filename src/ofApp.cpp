@@ -2,6 +2,8 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+	
+	cout << "Hello from setup" << endl;
 
 }
 
@@ -12,15 +14,24 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-ofBackground(0);
+ofBackground(128, 153, 255);
 ofTranslate(ofGetWidth()/2, ofGetHeight()/2);
 
-for(int i = 0; i < 3; i++)
+for(int i = 0; i < 900; i++)
  {
-   ofRotate(20);
-   ofDrawLine(0,0,0,220);
+   ofRotate(0.56);
+   ofDrawLine(0,50,0,320);
+   ofRotate(2);
+   ofDrawLine(0,50,150,120);
 
  }
+ 
+ /*for(int i = 0; i < 15; i++)
+ {
+   ofRotate(10);
+   ofDrawLine(0,50,0,320);
+
+ }*/
 }
 
 
